@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Dashboard</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="heading.css">
+    <style>
+    @media (min-width: 700px) {
+        body {
+            margin: 0;
+        }
+
+        .wrapper-dashboard {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            position: relative;
+            grid-column-gap: 10px;
+        }
+
+        div#left-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        }
+
+        div#right-sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        }
+
+        #content {
+            grid-column: 2;
+            height: 300vh;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        }
+
+        @media screen {
+            body>div#left-sidebar {
+                position: fixed;
+            }
+
+            body>div#right-sidebar {
+                position: fixed;
+            }
+        }
+
+        * html body {
+            overflow: hidden;
+        }
+
+        * html div#content {
+            height: 300vh;
+            overflow: auto;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        }
+    }
+
+    .wave-animation{
+        position: fixed;
+        height: 9em;
+        z-index: -1;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper-dashboard">
+        <div id="left-sidebar"> left-sidebar </div>
+        <div id="content"> content
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, neque. </p>
+        </div>
+        <div id="right-sidebar"> right-sidebar </div>
+        <svg class="wave-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z"></path>
+            </defs>
+            <g class="wave-bg">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="#ff990052"></use>
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="#ff990052"></use>
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#ff990052"></use>
+            </g>
+        </svg>
+    </div>
+</body>
+
+</html>
